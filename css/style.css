@@ -1,0 +1,1390 @@
+@font-face {
+  font-family: "Suisse Int'l";
+  font-display: swap;
+  src: url("../fonts/Suisse Int'l Medium.woff") format("woff"), url("../fonts/Suisse Int'l Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "terminator real nfi";
+  font-display: swap;
+  src: url("../fonts/terminator real nfi.woff") format("woff"), url("../fonts/terminator real nfi.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  padding-top: 40px;
+  margin-bottom: 137px;
+  background-image: url("../img/moon-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-left: 87px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#867863), to(#b9b2a6));
+  background: -o-linear-gradient(top, #867863 0%, #b9b2a6 100%);
+  background: linear-gradient(to bottom, #867863 0%, #b9b2a6 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  -webkit-transition: background-size .4s;
+  -o-transition: background-size .4s;
+  transition: background-size .4s;
+  padding-bottom: 2px;
+}
+
+.header__nav-link:hover {
+  background-size: 4px 50px;
+}
+
+.burger-open {
+  fill: #fff;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.burger-open:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.burger-open svg {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu {
+  display: none;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.mobile-menu.open {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.mobile-menu__link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 260px;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.moon {
+  margin-bottom: 130px;
+}
+
+.moon__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.moon__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  max-width: 470px;
+}
+
+.moon__content {
+  position: relative;
+}
+
+.moon__massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+
+.moon__massa-circle {
+  margin-right: 18px;
+  max-width: 150px;
+}
+
+.moon__massa-circle svg {
+  width: 100%;
+  fill: none;
+}
+
+.massa-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.massa-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.moon__diametr {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+.moon__diametr-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.moon__diametr-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 1px;
+  background-color: #bebebe;
+  bottom: -3px;
+}
+
+.moon__diametr-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.moon__age {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.moon__age-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.moon__age-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 1px;
+  background-color: #bebebe;
+  bottom: -3px;
+}
+
+.moon__age-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.moon__gravity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 70%;
+  right: 25%;
+}
+
+.moon__gravity-circle {
+  max-width: 120px;
+  margin-right: 18px;
+}
+
+.moon__gravity-circle svg {
+  width: 100%;
+  fill: none;
+}
+
+.moon__gravity-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.moon__gravity-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.moon__duration {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.moon__duration-title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.moon__duration-title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 1px;
+  background-color: #bebebe;
+  bottom: -3px;
+}
+
+.moon__duration-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.moon-history {
+  background-image: url("../img/moon_humans.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.moon-history__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.starship {
+  margin-bottom: 200px;
+}
+
+.starship__title {
+  font-family: "terminator real nfi";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 102px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.starship__subtitle {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.starship__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 97px;
+}
+
+.starship__link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 35px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.starship__link:hover {
+  color: #fff;
+}
+
+.starship__link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.starship__link.active {
+  color: #fff;
+  position: relative;
+}
+
+.starship__link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: -22px;
+}
+
+.starship-rocket {
+  display: none;
+}
+
+.starship-rocket.active {
+  display: block;
+}
+
+.starship__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+
+.starship__descr-text {
+  max-width: 430px;
+}
+
+.starship__descr-text:first-child {
+  margin-right: 200px;
+}
+
+.starship__content {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.starship__diametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+}
+
+.starship__diametr svg {
+  width: 80px;
+  height: 80px;
+  fill: none;
+  margin-right: 10px;
+}
+
+.diametr-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.diametr-text__title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 0.3px;
+  background-color: #bebebe;
+  bottom: -15%;
+  left: -80%;
+}
+
+.diametr-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__massa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.starship__massa svg {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  margin-right: 20px;
+}
+
+.massa-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.massa-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  right: 15%;
+}
+
+.starship__height svg {
+  width: 110px;
+  height: 600px;
+  fill: none;
+}
+
+.height-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.height-text__number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.starship__btn {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 58px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.starship__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.fly {
+  margin-bottom: 180px;
+}
+
+.fly__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.fly__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-right: 135px;
+}
+
+.fly__text {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  max-width: 460px;
+  margin-top: 30px;
+}
+
+.fly__item {
+  padding-top: 56.25%;
+}
+
+.fly__img {
+  margin-bottom: 130px;
+  max-width: 100%;
+  position: relative;
+}
+
+.fly__img svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fly__line {
+  position: relative;
+}
+
+.fly__line svg {
+  width: 100%;
+}
+
+.fly__line-number {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.fly__line-number span {
+  font-size: 14px;
+}
+
+.line-number__start {
+  position: absolute;
+  bottom: 0;
+}
+
+.line-number__start span {
+  padding-left: 10px;
+}
+
+.line-number__divide {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__divide span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__gear {
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__gear span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__adit {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__adit span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__visit {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__visit span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__return {
+  position: absolute;
+  top: 0;
+  left: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__return span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__entry {
+  position: absolute;
+  bottom: 0;
+  left: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__entry span {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.line-number__seat {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-number__seat span {
+  padding-left: 10px;
+}
+
+.nasa {
+  margin-bottom: 150px;
+}
+
+.nasa-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nasa-text__title {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  max-width: 470px;
+  margin-right: 200px;
+}
+
+.nasa-text__descr {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  max-width: 470px;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.footer-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.footer-nav__list-link {
+  font-family: "Suisse Int'l";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 58px;
+  color: #FFFFFF;
+  margin-left: 120px;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.footer-nav__list-link:hover {
+  opacity: .3;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .starship__height {
+    top: 15%;
+  }
+
+  .starship__height svg {
+    height: 400px;
+  }
+
+  .fly__title {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .nasa-text {
+    display: block;
+  }
+
+  .nasa-text__title {
+    margin-right: 0;
+    margin-bottom: 39px;
+  }
+
+  .footer-nav__list-link {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger-open {
+    display: block;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+
+  .header__title {
+    margin-top: 0;
+    font-size: 65px;
+  }
+
+  .starship__list {
+    margin-bottom: 50px;
+  }
+
+  .starship__descr-text:first-child {
+    margin-right: 100px;
+  }
+
+  .starship__diametr svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .diametr-text__title::before {
+    width: 100px;
+    left: -65%;
+    bottom: -14%;
+  }
+
+  .massa-text__title {
+    font-size: 10px;
+  }
+
+  .massa-text__title {
+    max-width: 100px;
+  }
+
+  .massa-text__number {
+    font-size: 12px;
+  }
+
+  .fly__descr {
+    display: block;
+  }
+
+  .fly__line svg {
+    width: 90%;
+  }
+
+  .fly__line-number {
+    font-size: 18px;
+  }
+
+  .fly__line-number span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .moon__massa-circle {
+    max-width: 100px;
+  }
+
+  .massa-text__title {
+    font-size: 10px;
+  }
+
+  .massa-text__number {
+    font-size: 14px;
+  }
+
+  .moon__diametr-title {
+    font-size: 10px;
+  }
+
+  .moon__diametr-title::before {
+    width: 100px;
+  }
+
+  .moon__diametr-number {
+    font-size: 14px;
+  }
+
+  .moon__age-title {
+    font-size: 10px;
+  }
+
+  .moon__age-title::before {
+    width: 100px;
+  }
+
+  .moon__age-number {
+    font-size: 14px;
+  }
+
+  .moon__gravity-circle {
+    max-width: 100px;
+  }
+
+  .moon__gravity-title {
+    font-size: 10px;
+  }
+
+  .moon__gravity-number {
+    font-size: 10px;
+  }
+
+  .moon__duration-title {
+    font-size: 10px;
+  }
+
+  .moon__duration-title::before {
+    width: 100px;
+  }
+
+  .moon__duration-number {
+    font-size: 14px;
+  }
+
+  .starship__height svg {
+    height: 300px;
+  }
+
+  .fly__descr {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .starship__link {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 810px) {
+  .footer-menu {
+    display: block;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-nav__list {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-nav__list-link {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .moon-history {
+    height: 70vh;
+  }
+
+  .starship__title {
+    font-size: 60px;
+  }
+
+  .starship__descr {
+    display: block;
+    text-align: center;
+  }
+
+  .starship__descr-text {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+
+  .starship__descr-text:first-child {
+    margin: 0 auto;
+  }
+
+  .fly {
+    margin-bottom: 50px;
+  }
+
+  .fly__img {
+    margin-bottom: 50px;
+  }
+
+  .line-number__divide {
+    left: 5%;
+  }
+
+  .line-number__gear {
+    left: 15%;
+  }
+
+  .line-number__adit {
+    left: 25%;
+  }
+
+  .line-number__visit {
+    left: 37%;
+  }
+
+  .line-number__return {
+    left: 47%;
+  }
+
+  .line-number__entry {
+    left: 63%;
+  }
+
+  .line-number__seat {
+    left: 80%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .moon-history__text {
+    font-size: 18px;
+  }
+
+  .starship__height {
+    top: 10%;
+  }
+
+  .starship__height svg {
+    width: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .moon {
+    margin-bottom: 50px;
+  }
+
+  .moon__massa {
+    display: none;
+  }
+
+  .moon__diametr {
+    display: none;
+  }
+
+  .moon__age {
+    display: none;
+  }
+
+  .moon__gravity {
+    display: none;
+  }
+
+  .moon__duration {
+    display: none;
+  }
+
+  .moon-history {
+    height: 50vh;
+  }
+
+  .starship__list {
+    display: block;
+    text-align: center;
+  }
+
+  .starship__list li {
+    margin-bottom: 10px;
+  }
+
+  .starship__link {
+    margin: 0 5px;
+  }
+
+  .starship__link:hover {
+    color: #fff;
+  }
+
+  .starship__link:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: -7px;
+  }
+
+  .starship__link.active::before {
+    bottom: -7px;
+  }
+
+  .starship__diametr {
+    display: none;
+  }
+
+  .starship__massa {
+    display: none;
+  }
+
+  .starship__height {
+    display: none;
+  }
+
+  .line-number__divide {
+    top: 20%;
+  }
+
+  .line-number__gear {
+    bottom: 20%;
+  }
+
+  .line-number__return {
+    top: 20%;
+  }
+
+  .line-number__entry {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .starship {
+    margin-bottom: 50px;
+  }
+
+  .starship__title {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .starship__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .starship__descr {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nasa-text__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .moon-history {
+    height: 30vh;
+  }
+
+  .starship__title {
+    font-size: 30px;
+  }
+
+  .starship__subtitle {
+    font-size: 20px;
+  }
+
+  .fly__title {
+    font-size: 30px;
+  }
+
+  .fly__line svg {
+    display: none;
+  }
+
+  .line-number__divide {
+    left: 0;
+  }
+
+  .line-number__gear {
+    left: 0%;
+    bottom: -64px;
+  }
+
+  .line-number__adit {
+    left: 0%;
+    top: 75px;
+  }
+
+  .line-number__visit {
+    left: 123px;
+    top: -26px;
+  }
+
+  .line-number__return {
+    left: 123px;
+    top: 4px;
+  }
+
+  .line-number__entry {
+    left: 123px;
+    top: 33px;
+  }
+
+  .line-number__seat {
+    left: 123px;
+    top: 63px;
+  }
+
+  .nasa {
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+}
+
+.webp .header { background-image: url(../img/moon-bg.webp); }
+
+.webp .moon-history { background-image: url(../img/moon_humans.webp); }
